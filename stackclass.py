@@ -52,6 +52,7 @@ def menu():
         print("2. Pop")
         print("3. Peek")
         print("4. Display")
+        print("5. Size")
 
         #get user's choice
         choice = input("Enter your choice: ")
@@ -69,6 +70,9 @@ def menu():
                 print(f"Top of stack: {top}")
         elif choice == "4":
             s.display()
+        elif choice == "5":
+            print(f"Stack size: {s.size()}")
+            break
 
 #enttry point of the program
 if __name__ == "__main__":
