@@ -41,5 +41,27 @@ class Stack:
             for item in reversed(self.items):
                 print(item)
 
+#function to display menu and interact with stack class
 def menu():
     s = Stack()
+
+    while True:
+        #display options to the user
+        print("\nStack Menu:")
+        print("1. Push")
+        print("2. Pop")
+
+        #get user's choice
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            val = input("Enter value to push: ")
+            s.push(val)
+        elif choice == "2":
+            popped = s.pop()
+            if popped is not None:
+                print(f"Popped value: {popped}")
+
+#enttry point of the program
+if __name__ == "__main__":
+    menu()
