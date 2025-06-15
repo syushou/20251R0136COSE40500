@@ -50,6 +50,7 @@ def menu():
         print("\nStack Menu:")
         print("1. Push")
         print("2. Pop")
+        print("3. Peek")
 
         #get user's choice
         choice = input("Enter your choice: ")
@@ -61,6 +62,10 @@ def menu():
             popped = s.pop()
             if popped is not None:
                 print(f"Popped value: {popped}")
+        elif choice == "3":
+            top = s.peek()
+            if top is not None:
+                print(f"Top of stack: {top}")
 
 #enttry point of the program
 if __name__ == "__main__":
