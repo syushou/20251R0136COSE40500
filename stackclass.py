@@ -76,9 +76,9 @@ def menu():
         elif choice == "6":
             print("Exiting...")
         else:
-            print("Invalid choice. Try again.")
+            print("Invalid choice. Please enter a number from 1 to 6.Try again.")
             break
 
 #entry point of the program
 if __name__ == "__main__":
-    menu()
+    menu() #run the menu 
