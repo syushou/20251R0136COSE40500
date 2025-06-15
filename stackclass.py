@@ -75,6 +75,8 @@ def menu():
             print(f"Stack size: {s.size()}")
         elif choice == "6":
             print("Exiting...")
+        else:
+            print("Invalid choice. Try again.")
             break
 
 #entry point of the program
