@@ -53,6 +53,7 @@ def menu():
         print("3. Peek")
         print("4. Display")
         print("5. Size")
+        print("6. Exit")
 
         #get user's choice
         choice = input("Enter your choice: ")
@@ -72,8 +73,10 @@ def menu():
             s.display()
         elif choice == "5":
             print(f"Stack size: {s.size()}")
+        elif choice == "6":
+            print("Exiting...")
             break
 
-#enttry point of the program
+#entry point of the program
 if __name__ == "__main__":
     menu()
