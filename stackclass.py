@@ -1,5 +1,6 @@
  #Stack class implementation using a Python list
-
+#This program implements a 
+#basic stack data structure with a menu-based interface.
 class Stack:
     def __init__(self):
         #created empty list to store stack items
